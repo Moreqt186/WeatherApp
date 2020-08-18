@@ -1,0 +1,73 @@
+/*Главный див */
+.mainFlexBox {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.mainFlexBox > div {
+  padding: 10px;
+}
+
+/*Картинка и данные снизу */
+.midFlexBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 23px;
+  height: 100%;
+}
+
+.midFlexBox > div {
+}
+
+.bottomFLexBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.bottomFLexBox > div {
+  padding: 20px;
+}
+
+.btnInput {
+  border: 1px solid white;
+  height: 25px;
+  margin: 3px;
+  border-radius: 10px;
+  align-content: center;
+  outline: none;
+}
+
+.btnWhite {
+  font-size: 20px;
+  margin: 3px;
+  border: 1px solid white;
+  height: 25px;
+  border-radius: 10px;
+  align-content: center;
+  outline: none;
+  background-color: white;
+  color: dodgerblue;
+  font-weight: bold;
+}
+
+.imgFlexBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 40px;
+}
+.mainBtnFlexBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.weatherDown {
+  text-align: left;
+}
