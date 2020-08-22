@@ -14,7 +14,7 @@ export class AppComponent {
   weatherCurrent;
   searchInput;
 
-  methodSearchWeather() {
+  searchWeather() {
     this.ows.search(this.searchInput).subscribe(
       (data) => {
         console.log(data);
@@ -23,11 +23,11 @@ export class AppComponent {
     );
   }
 
-  methodToggle() {
+  tumbler() {
     this.toggle = !this.toggle;
   }
 
-  methodRefreshWeatherCurrent() {
+  renameCity() {
     this.weatherCurrent = null;
   }
 }
