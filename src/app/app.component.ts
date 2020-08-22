@@ -17,7 +17,6 @@ export class AppComponent {
   searchWeather() {
     this.ows.search(this.searchInput).subscribe(
       (data) => {
-        console.log(data);
         this.weatherCurrent = data;
       }
     );
