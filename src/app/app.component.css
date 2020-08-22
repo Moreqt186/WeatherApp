@@ -63,11 +63,13 @@
   align-items: center;
   font-size: 40px;
 }
+
 .mainBtnFlexBox {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
+
 .weatherDown {
   text-align: left;
 }
