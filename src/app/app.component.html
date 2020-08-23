@@ -2,12 +2,12 @@
   <div>
     <div *ngIf="!weatherCurrent">
       <input placeholder="Введите город" class="btnInput" [(ngModel)]="searchInput">
-      <button class="btnWhite" (click)="searchWeather()">Поиск</button>
+      <button class="btnStyle" (click)="searchWeather()">Поиск</button>
     </div>
     <div *ngIf="weatherCurrent">{{searchInput}}</div>
     <div class="mainBtnFlexBox" *ngIf="weatherCurrent">
-      <button class="btnWhite" (click)="renameCity()">Сменить город</button>
-      <button class="btnWhite" (click)="tumbler()">°C / F</button>
+      <button class="btnStyle" (click)="renameCity()">Сменить город</button>
+      <button class="btnStyle" (click)="tumbler()">°C / F</button>
     </div>
   </div>
   <div class="midFlexBox" *ngIf="weatherCurrent">
