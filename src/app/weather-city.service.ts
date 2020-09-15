@@ -17,7 +17,7 @@ export type WeatherD = {
   ],
   'base': string,
   'main': {
-    'temp': number,
+    'temp': string,
     'feels_like': string,
     'temp_min': string,
     'temp_max': string,

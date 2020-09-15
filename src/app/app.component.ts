@@ -7,26 +7,27 @@ import {WeatherCityService} from './weather-city.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
+  toggle = true;
+  currentWeather;
+  searchInput: string;
+
   constructor(private ows: WeatherCityService) {
   }
 
-  toggle = true;
-  weatherCurrent;
-  searchInput;
-
-  searchWeather() {
+  searchWeather(): void {
     this.ows.search(this.searchInput).subscribe(
       (data) => {
-        this.weatherCurrent = data;
+        this.currentWeather = data;
       }
     );
   }
 
-  tumbler() {
+  tumbler(): void {
     this.toggle = !this.toggle;
   }
 
-  renameCity() {
-    this.weatherCurrent = null;
+  renameCity(): void {
+    this.currentWeather = null;
   }
 }
