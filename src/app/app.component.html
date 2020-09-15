@@ -4,7 +4,7 @@
       <input placeholder="Введите город" class="btnInput" [(ngModel)]="searchInput">
       <button class="btnStyle" (click)="searchWeather()">Поиск</button>
     </div>
-    <div *ngIf="currentWeather">{{searchInput}}</div>
+    <div *ngIf="currentWeather">{{searchInput|uppercase}}</div>
     <div class="mainBtnFlexBox" *ngIf="currentWeather">
       <button class="btnStyle" (click)="renameCity()">Сменить город</button>
       <button class="btnStyle" (click)="tumbler()">°C / F</button>

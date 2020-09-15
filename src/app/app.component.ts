@@ -1,5 +1,6 @@
 import {Component} from '@angular/core';
 import {WeatherCityService} from './weather-city.service';
+import {WeatherInterface} from './models/weather';
 
 @Component({
   selector: 'app-root',
@@ -8,9 +9,9 @@ import {WeatherCityService} from './weather-city.service';
 })
 export class AppComponent {
 
+  currentWeather: WeatherInterface;
   toggle = true;
   searchInput: string;
-  currentWeather;
 
   constructor(private ows: WeatherCityService) {
   }
