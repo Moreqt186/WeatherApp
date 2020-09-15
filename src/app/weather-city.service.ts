@@ -3,7 +3,7 @@ import {Injectable} from '@angular/core';
 import {Observable} from 'rxjs';
 import {WeatherInterface} from './models/weather';
 
-export type WeatherD = WeatherInterface;
+export type WeatherData = WeatherInterface;
 
 @Injectable(
   {providedIn: 'root'})
@@ -13,8 +13,8 @@ export class WeatherCityService {
   constructor(private http: HttpClient) {
   }
 
-  search(query: string): Observable<WeatherD> {
+  search(query: string): Observable<WeatherData> {
     return this.http
-      .get<WeatherD>(`${this.API_PATH}?q=${query}&appid=fc3c2f7ef73c893e929199028755ec03`);
+      .get<WeatherData>(`${this.API_PATH}?q=${query}&appid=fc3c2f7ef73c893e929199028755ec03`);
   }
 }
