@@ -9,8 +9,8 @@ import {WeatherCityService} from './weather-city.service';
 export class AppComponent {
 
   toggle = true;
-  currentWeather;
   searchInput: string;
+  currentWeather;
 
   constructor(private ows: WeatherCityService) {
   }
